@@ -10,8 +10,8 @@ axios
     `${API_BASE_URL}/search?api_key=${process.env.API_KEY}&q=${SEARCH_KEY_WORD}`
   )
   .then((res) => {
-    const gifs = res.data.data;
-    gifs.map((gif) => {
-      console.log(gif.title);
+    const movies = res.data.data;
+    movies.map((movie) => {
+      console.log(movie.title);
     });
   });
